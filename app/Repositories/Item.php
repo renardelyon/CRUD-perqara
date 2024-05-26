@@ -2,9 +2,10 @@
 
 namespace App\Repositories;
 
+use App\Repositories\Interfaces\ItemRepoInterface;
 use Illuminate\Support\Facades\File;
 
-class Item
+class ItemRepo implements ItemRepoInterface
 {
     protected $filePath;
 

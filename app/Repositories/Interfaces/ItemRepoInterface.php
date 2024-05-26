@@ -2,7 +2,8 @@
 
 namespace App\Repositories\Interfaces;
 
-interface ItemInterface {
+interface ItemRepoInterface
+{
     public function save(array $item);
     public function get();
 }

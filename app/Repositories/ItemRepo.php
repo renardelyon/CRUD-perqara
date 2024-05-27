@@ -11,7 +11,7 @@ class ItemRepo implements ItemRepoInterface
 
     public function __construct(string $path)
     {
-        $this->filePath = storage_path($path);
+        $this->filePath = base_path().$path;
     }
 
     private function decodeFile()
